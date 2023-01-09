@@ -4,23 +4,23 @@ on: [pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    step:
+    steps:
       - name: Checkout Repository
-      uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Setup Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
 
       - name: Install dependencies
-      run: yarn install
+        run: yarn install
 
       - name: Lint
-      run: yarn lint
+        run: yarn lint
 
       - name: Test
-      run: yarn test
+        run: yarn test
 
       - name: Build
-      run: yarn build
+        run: yarn build
