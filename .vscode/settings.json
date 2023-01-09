@@ -2,5 +2,9 @@
   "editor.formatOnPaste": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
+  },
+  "[handlebars]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
   }
 }
